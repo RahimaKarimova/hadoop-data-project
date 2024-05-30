@@ -1,0 +1,52 @@
+# Homework Submission
+
+## System Information
+
+### Operating System
+- OS Name: Microsoft Windows 11 Pro
+
+### Hadoop Version
+- Hadoop Release: 3.2.4
+- Source code repository: Unknown (Commit: 7e5d9983b388e372fe640f21f048f2f2ae6e9eba)
+- Compiled by: ubuntu on 2022-07-12T11:58Z
+- Compiled with protoc: 2.5.0
+
+### JDK Version
+- JDK Version: 1.8.0_411
+- Java(TM) SE Runtime Environment (build 1.8.0_411-b09)
+- Java HotSpot(TM) Client VM (build 25.411-b09, mixed mode, sharing)
+
+### IDE Used
+- IDE: Version 1.89.1 (user setup)
+  - Commit: dc96b837cf6bb4af9cd736aa3af08cf8279f7685
+  - Date: 2024-05-07T05:13:33.891Z
+  - Electron: 28.2.8
+  - Chromium: 120.0.6099.291
+  - Node.js: 18.18.2
+  - V8: 12.0.267.19-electron.0
+  - OS: Windows_NT x64 10.0.22631
+
+## Instructions to Build and Run the Project
+
+To build and run the project, follow these steps:
+
+1. **Build the Project:**
+   - Please open a terminal and navigate to the root directory of your Maven project (where `pom.xml` is located).
+   - Please run the following command to compile the project and package it into a JAR file:
+     ```
+     mvn clean package
+     ```
+
+   This will compile the project and package it into a JAR file named `hw3.jar`.
+
+2. **Run the Hadoop Job:**
+
+     ```
+     # Replace <input.csv> with the actual path to your input file in HDFS
+
+     hadoop jar target\Hw3.jar total /input.csv /output_total
+     hadoop jar target\Hw3.jar jobtitle /input.csv /output_jobtitle
+     hadoop jar target\Hw3.jar titleexperince /input.csv /output_titleexperience
+     hadoop jar target\Hw3.jar employeeresidence /input.csv /output_employeeresidence
+     hadoop jar target\Hw3.jar averageyear /input.csv /output_averageyear
+     ```

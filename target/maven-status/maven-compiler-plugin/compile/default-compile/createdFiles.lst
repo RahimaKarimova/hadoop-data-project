@@ -1,0 +1,17 @@
+total$TotalSalaryMapper.class
+averageyear$YearPartitioner.class
+titleexperince$TitleExperienceReducer.class
+total$TotalSalaryReducer.class
+titleexperince.class
+jobtitle.class
+employeeresidence$EmployeeResidenceMapper.class
+employeeresidence$ResidencePartitioner.class
+averageyear$AverageYearReducer.class
+employeeresidence$EmployeeResidenceReducer.class
+employeeresidence.class
+averageyear$AverageYearMapper.class
+jobtitle$JobTitleMapper.class
+total.class
+jobtitle$JobTitleReducer.class
+averageyear.class
+titleexperince$TitleExperienceMapper.class
